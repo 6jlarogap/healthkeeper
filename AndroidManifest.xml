@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.health.main"
+    android:versionCode="29"
+    android:versionName="1.29" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />    
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS"/>    
+    <application
+        android:debuggable="true"
+        android:allowBackup="true"
+        android:icon="@drawable/heart"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" android:name="HealthApplication">
+        <activity
+            android:name="com.health.main.AuthorizeActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation"
+    		android:screenOrientation="portrait">            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.health.main.MainActivity" android:label="@string/app_name" android:configChanges="orientation" android:screenOrientation="portrait" />
+        <activity android:name="com.health.settings.SettingsActivity" android:label="@string/app_name" android:configChanges="orientation" android:screenOrientation="portrait" />        
+        <activity android:name="org.achartengine.GraphicalActivity" android:configChanges="orientation" android:screenOrientation="portrait" />        
+        <activity android:name="com.health.main.HistoryBodyFeelingActivity" android:label="@string/history_bodyfeeling_title" android:launchMode="singleTask" 
+            android:configChanges="orientation" android:screenOrientation="portrait" />
+        <activity android:name="com.health.main.CustomTypeActivity" android:label="ADD"
+            android:configChanges="orientation" android:screenOrientation="portrait" />
+        <activity android:name="com.health.main.PersonalDataActivity" android:label="@string/personal_data_title" android:launchMode="singleTask" 
+            android:configChanges="orientation" android:screenOrientation="portrait" />
+        
+        <service android:name="com.health.service.AsyncService" android:exported="false" android:enabled="true" />
+        <service android:name="com.health.service.LocationService" android:enabled="true" />
+        <service android:name="com.health.service.SyncDataService" android:enabled="true" />
+        <receiver android:name="com.health.service.SyncDataServiceReceiver"/>
+        
+        <activity android:name="org.acra.CrashReportDialog" android:theme="@android:style/Theme.Dialog"
+        	android:launchMode="singleInstance" android:excludeFromRecents="true" android:finishOnTaskLaunch="true" />                   
+    </application>
+
+</manifest>

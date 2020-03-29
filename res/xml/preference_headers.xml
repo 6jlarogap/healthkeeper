@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+    <header
+        android:id="@+id/header1"
+        android:tag="west"         
+        android:title="Настройки"
+        android:fragment="com.health.settings.MainPreferenceFragment"/>
+    <header
+        android:id="@+id/header2"  
+        android:title="Графики(Погода)" 
+        android:fragment="com.health.settings.GraphPreferenceFragment">
+        <extra android:name="groupid"
+               android:value="1" />
+    </header>
+    <header
+        android:id="@+id/header3"  
+        android:title="Графики(Астрономия)"
+        android:fragment="com.health.settings.GraphPreferenceFragment">
+        <extra android:name="groupid"
+               android:value="2" />
+    </header>
+    <header
+        android:id="@+id/header4"  
+        android:title="Графики(Геогелиофизика)"
+        android:fragment="com.health.settings.GraphPreferenceFragment">
+        <extra android:name="groupid"
+               android:value="3" />
+    </header>
+    <header
+        android:id="@+id/header5"  
+        android:title="Пользовательские графики"
+        android:fragment="com.health.settings.GraphPreferenceFragment">
+        <extra android:name="groupid"
+               android:value="4" />
+    </header>
+</preference-headers>

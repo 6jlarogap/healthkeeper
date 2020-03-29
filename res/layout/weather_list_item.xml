@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    android:orientation="horizontal" >
+
+	<LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:orientation="vertical" >
+	    <FrameLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+		    <Button
+	            android:id="@+id/btnHidePlot"
+	            style="@style/button_hide_plot"
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+	            android:textSize="20sp"
+	            android:layout_gravity="top|left"
+	        	android:gravity="center"
+	            android:text="Х" />
+		    <Button
+	            android:id="@+id/btnHelpPlot"
+	            style="@style/button_hide_plot"
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+	            android:textSize="20sp"
+	            android:layout_gravity="top|center_horizontal"
+	        	android:gravity="center"
+	            android:text="\?" />
+		    <ImageButton
+	            android:id="@+id/btnRC"
+	            style="@style/button_hide_plot"
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+	            android:textSize="12sp"
+	            android:layout_gravity="top|right"
+	        	android:gravity="center"
+				android:src="@drawable/ic_plot_menu" />
+		</FrameLayout>
+	    
+	    <TextView
+	        android:id="@+id/tvMarkedValue"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:gravity="center"
+	        android:textStyle="bold|italic"
+	        android:visibility="visible" 
+	        android:textColor="@color/blue" />
+	    <TextView
+	        android:id="@+id/tvPlotName"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:gravity="center"
+	        android:textStyle="bold|italic"
+	        android:visibility="visible" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/llPlot"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_gravity="center_vertical"        
+        android:orientation="vertical" >
+    </RelativeLayout>
+
+</LinearLayout>

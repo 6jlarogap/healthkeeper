@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:id="@+id/menugroup1" >
+        <item
+            android:id="@+id/plot_menu_histogramm"
+            android:title="Показать гистограмму"/>
+        <item
+            android:id="@+id/plot_menu_add_juxtapose"
+            android:title="Наложить график">
+            <menu>
+    			<group android:id="@+id/menugroup2" >
+    			</group>
+            </menu>
+        </item>>
+        <item
+            android:id="@+id/plot_menu_remove_juxtapose"
+            android:title="Убрать наложение"/>
+        <item
+            android:id="@+id/plot_menu_hourly_data"
+            android:checkable="true"
+            android:title="Почасовые данные"/>
+        <item
+            android:id="@+id/plot_menu_daily_data"
+            android:checkable="true"
+            android:title="Ежедневные данные"/>
+        <item
+            android:id="@+id/plot_menu_hourly_change"
+            android:checkable="true"
+            android:title="Почасовые изменения"/>
+        <item
+            android:id="@+id/plot_menu_daily_change"
+            android:checkable="true"
+            android:title="Ежедневные изменения"/>
+    </group>
+
+</menu>

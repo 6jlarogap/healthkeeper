@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">    
+    <TextView
+        android:id="@+id/tvDDateFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:text="@string/tvDDateFrom"
+        android:layout_gravity="center" />
+    
+    <DatePicker
+        android:id="@+id/dPeriodFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:calendarViewShown="false"
+        android:layout_gravity="center"/>
+
+    
+    <TextView
+        android:id="@+id/tvDDateTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvDDateTo"        
+        android:layout_gravity="center" />
+    <DatePicker
+        android:id="@+id/dPeriodTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:calendarViewShown="false"
+        android:layout_gravity="center"/>
+    
+    <Button
+        android:id="@+id/btnSavePeriod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSavePeriod"
+        android:padding="5dp" 
+        android:layout_gravity="center"
+        style="@style/button"/>
+
+    <TextView
+        android:id="@+id/tvDMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red" 
+        android:text="@string/error_period_date"
+        android:background="@color/sun" 
+        android:visibility="invisible"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/Spacer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:visibility="visible"/>
+    
+</LinearLayout>

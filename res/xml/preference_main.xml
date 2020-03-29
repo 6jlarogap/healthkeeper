@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Синхронизация данных" >
+        <SwitchPreference android:title="Автоматическая" android:key="isAutoSync" />
+        <ListPreference android:title="Периодичноcть" android:key="isPeriodSync" 
+            android:entries="@array/sync_period_array"
+            android:entryValues="@array/sync_period_array_values" />        
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="Настройка цвета" >
+        <com.health.settings.PreferenceDefaultColorDialog
+            android:key="defaultColorDialog"
+            android:summary="Выбор цвета по умолчанию для болевого ощущения"
+            android:title="Цвет по умолчанию" />
+        <com.health.settings.PreferenceColorDialog
+            android:key="colorDialog"
+            android:summary="Выбор цвета для болевого ощущения"
+            android:title="Цвет" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,5 @@
+INSERT INTO "tbluserbodyfeelingtype" (`BodyFeelingType_id` , `Color` , `userid`, `RowId` , `ServerId`) VALUES(NULL,-15669167,0,'03084fd7-6256-42db-9883-78280dbf4c4f',NULL);
+INSERT INTO "tbluserbodyfeelingtype" (`BodyFeelingType_id` , `Color` , `userid`, `RowId` , `ServerId`) VALUES(20,-689678327,4,'d751fe54-ce88-4ca7-80f2-0d6af5595378',NULL);
+INSERT INTO "tbluserbodyfeelingtype" (`BodyFeelingType_id` , `Color` , `userid`, `RowId` , `ServerId`) VALUES(101,-65536,4,'6b592695-fe6e-4336-8e36-7e0cb0d74455',NULL);
+INSERT INTO "tbluserbodyfeelingtype" (`BodyFeelingType_id` , `Color` , `userid`, `RowId` , `ServerId`) VALUES(66,-635037479,4,'c531f66f-de8d-4b2a-897f-f00a6893535a',NULL);
+INSERT INTO "tbluserbodyfeelingtype" (`BodyFeelingType_id` , `Color` , `userid`, `RowId` , `ServerId`) VALUES(24,-852224,4,'493c8b75-96d8-4229-b7dc-7b1ed79f1596',NULL);

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/tvHelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="График &quot;Скорость ветра&quot; отображает скорость и направление движения воздуха относительной земной поверхности. Данные указываются в метрах в секунду (м/с). Цвет под графиком обозначает направление ветра: синий - северный, красный - южный, желтый - восточный, зеленый - западный. Цвета других ветров являются смесь этих четырех цветов, например: юго-восточный - оранжевый, юго-западный - коричневый, северо-восточный - серый, северо-западный - бирюзовый."
+        android:gravity="center_horizontal"/>
+    
+	<Button
+        android:id="@+id/btnOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:padding="5dp" 
+        android:layout_gravity="center"
+        style="@style/button"/>
+</LinearLayout>

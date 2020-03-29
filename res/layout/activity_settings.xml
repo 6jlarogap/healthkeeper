@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity" >
+
+	    <TextView
+	        android:id="@+id/tvLastName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/tvLastName" />
+
+	    <EditText
+	        android:id="@+id/etLastName"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="textPersonName" >
+	        <requestFocus />
+	    </EditText>
+   
+        <TextView
+        android:id="@+id/tvFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvFirstName" />
+        
+	    <EditText
+	        android:id="@+id/etFirstName"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="textPersonName">        
+	    </EditText>
+    
+        <TextView
+        android:id="@+id/tvMiddleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvMiddleName" />
+        
+    	<EditText
+	        android:id="@+id/etMiddleName"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="textPersonName" >        
+    	</EditText>
+
+</LinearLayout>

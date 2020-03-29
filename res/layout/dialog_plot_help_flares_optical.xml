@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/tvHelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="График &quot;Солнечные вспышки (Optical)&quot; отображает количество солнечных вспышек, классифицированных по видимой площади. Красная линия - вспышки класса S (площадь меньше 100 миллионных долей полусферы). Зеленая линия - вспышки класса 1 (площадь от 100 до 250 миллионных долей полусферы). Синяя линия - вспышки класса 2 (площадь от 250 до 600 миллионных долей полусферы). Желтая линия - вспышки класса 3 (площадь от 600 до 1200 миллионных долей полусферы)."
+        android:gravity="center_horizontal"/>
+    
+	<Button
+        android:id="@+id/btnOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:padding="5dp" 
+        android:layout_gravity="center"
+        style="@style/button"/>
+</LinearLayout>

@@ -1,0 +1,10 @@
+0 8,14,16 * * * /usr/bin/php5.5 -q /kunden/homepages/1/d378282321/htdocs/health/ForecastTools/collectdata.php > /kunden/homepages/1/d378282321/htdocs/health/ForecastTools/collecdata_log.txt
+0 8,14,16 * * * /usr/bin/php5.5 -q /kunden/homepages/1/d378282321/htdocs/health/openweatherapi/collecting_openweather.php > /kunden/homepages/1/d378282321/htdocs/health/openweatherapi/openweatherapi_log.txt
+0 23 * * * /usr/bin/php5.5 -q /kunden/homepages/1/d378282321/htdocs/health/geoPhysicsDataCollecting/getApForecast45d.php > /kunden/homepages/1/d378282321/htdocs/health/geoPhysicsDataCollecting/getApForecast45d_log.txt
+0 2,15 * * * /usr/bin/php5.5 -q /kunden/homepages/1/d378282321/htdocs/health/geoPhysicsDataCollecting/getKpForecast3d.php > /kunden/homepages/1/d378282321/htdocs/health/geoPhysicsDataCollecting/getKpForecast3d_log.txt
+0 2,5,8,11,14,17,20	* *	* /usr/bin/php5.5 -q /kunden/homepages/1/d378282321/htdocs/health/geoPhysicsDataCollecting/getKpData30d.php > /kunden/homepages/1/d378282321/htdocs/health/geoPhysicsDataCollecting/getKpData30d_log.txt
+0 12 15 * * /usr/bin/php5.5 -q /kunden/homepages/1/d378282321/htdocs/health/geoPhysicsDataCollecting/getKpDataYear.php > /kunden/homepages/1/d378282321/htdocs/health/geoPhysicsDataCollecting/getKpDataYear_log.txt
+0 12 15	* *	/usr/bin/php5.5 -q /kunden/homepages/1/d378282321/htdocs/health/geoPhysicsDataCollecting/getApDataYear.php > /kunden/homepages/1/d378282321/htdocs/health/geoPhysicsDataCollecting/getApDataYear_log.txt
+0 23 * * * /usr/bin/php5.5 -q /kunden/homepages/1/d378282321/htdocs/health/helioPhysicsDataCollecting/getF10_7Forecast45d.php > /kunden/homepages/1/d378282321/htdocs/health/helioPhysicsDataCollecting/getF10_7Forecast45d_log.txt
+0 4,10,16,22 * * * /usr/bin/php5.5 -q /kunden/homepages/1/d378282321/htdocs/health/helioPhysicsDataCollecting/getHelioData30d.php > /kunden/homepages/1/d378282321/htdocs/health/helioPhysicsDataCollecting/getHelioData30d_log.txt
+0 9,15,17 * * * /usr/bin/php5.5 -q /kunden/homepages/1/d378282321/htdocs/health/openweatherapi/collecting_openweather_hist.php > /kunden/homepages/1/d378282321/htdocs/health/openweatherapi/openweatherapi_hist_log.txt

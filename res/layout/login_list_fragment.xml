@@ -1,0 +1,76 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment" >
+
+    <!-- Login progress -->
+    <include layout="@layout/login_status_progress" />
+
+    <LinearLayout
+        android:id="@+id/login_list_form"        
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:text="Выберите аккаунт"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/title" />
+
+        <ListView
+            android:id="@+id/lvLogin"
+            android:layout_width="match_parent"
+            android:minHeight="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fadeScrollbars="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnAddAccount"
+                style="@style/button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Добавить аккаунт" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                style="@style/button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Регистрация" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAnonimSignIn"
+            style="@style/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="Ознакомительный просмотр" />
+    </LinearLayout>
+
+</merge>

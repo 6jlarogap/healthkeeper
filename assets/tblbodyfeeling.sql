@@ -1,0 +1,17 @@
+INSERT INTO "tblbodyfeeling" (`feelingtypeid`, `bodyregionid`, `dt` , `userid`, `RowId`, `ServerId`) VALUES(20,12,1417681800000,NULL,'763dac66-a10e-49d4-9952-941d70c18a2c',NULL);
+INSERT INTO "tblbodyfeeling" (`feelingtypeid`, `bodyregionid`, `dt` , `userid`, `RowId`, `ServerId`) VALUES(20,12,1418203980000,NULL,'5bf14e6d-875f-4ffd-acd6-ef5734da2456',NULL);
+INSERT INTO "tblbodyfeeling" (`feelingtypeid`, `bodyregionid`, `dt` , `userid`, `RowId`, `ServerId`) VALUES(20,12,1418567520000,NULL,'5c5d46f9-fa15-4e25-af9b-043c8a726788',NULL);
+INSERT INTO "tblbodyfeeling" (`feelingtypeid`, `bodyregionid`, `dt` , `userid`, `RowId`, `ServerId`) VALUES(5,32,1417595640000,NULL,'8b8ef2ae-4b9f-4e5e-a090-b2085e9b0b84',NULL);
+INSERT INTO "tblbodyfeeling" (`feelingtypeid`, `bodyregionid`, `dt` , `userid`, `RowId`, `ServerId`) VALUES(5,32,1417710900000,NULL,'d66d10b1-830e-40be-bebd-9daf98f4fd89',NULL);
+INSERT INTO "tblbodyfeeling" (`feelingtypeid`, `bodyregionid`, `dt` , `userid`, `RowId`, `ServerId`) VALUES(5,32,1417779300000,NULL,'cf3efbde-8f53-4529-b6e9-450ed7d16488',NULL);
+INSERT INTO "tblbodyfeeling" (`feelingtypeid`, `bodyregionid`, `dt` , `userid`, `RowId`, `ServerId`) VALUES(5,32,1417854960000,NULL,'39664cde-aa12-4444-98a5-fcb3f7e6fee3',NULL);
+INSERT INTO "tblbodyfeeling" (`feelingtypeid`, `bodyregionid`, `dt` , `userid`, `RowId`, `ServerId`) VALUES(5,32,1417952160000,NULL,'6bff5253-ab3e-4e3b-90d4-f2a32bda6d7f',NULL);
+INSERT INTO "tblbodyfeeling" (`feelingtypeid`, `bodyregionid`, `dt` , `userid`, `RowId`, `ServerId`) VALUES(5,32,1418038560000,NULL,'109dad2c-3c27-4d48-9305-452fd703bb8e',NULL);
+INSERT INTO "tblbodyfeeling" (`feelingtypeid`, `bodyregionid`, `dt` , `userid`, `RowId`, `ServerId`) VALUES(5,32,1418305020000,NULL,'7123ccb7-29d3-4039-8187-b7ef4d9f3521',NULL);
+INSERT INTO "tblbodyfeeling" (`feelingtypeid`, `bodyregionid`, `dt` , `userid`, `RowId`, `ServerId`) VALUES(24,12,1417512780000,NULL,'437b3bf0-18cc-4237-9090-f08ef08259cc',NULL);
+INSERT INTO "tblbodyfeeling" (`feelingtypeid`, `bodyregionid`, `dt` , `userid`, `RowId`, `ServerId`) VALUES(24,12,1417703880000,NULL,'74843e4a-69c7-4931-a9cf-c1aebe012f09',NULL);
+INSERT INTO "tblbodyfeeling" (`feelingtypeid`, `bodyregionid`, `dt` , `userid`, `RowId`, `ServerId`) VALUES(24,12,1418031480000,NULL,'320e2de0-0cf2-4659-9309-5ce3a02560c7',NULL);
+INSERT INTO "tblbodyfeeling" (`feelingtypeid`, `bodyregionid`, `dt` , `userid`, `RowId`, `ServerId`) VALUES(24,12,1418225940000,NULL,'bc9f2a07-1b76-4005-91ef-d851c1e159c6',NULL);
+INSERT INTO "tblbodyfeeling" (`feelingtypeid`, `bodyregionid`, `dt` , `userid`, `RowId`, `ServerId`) VALUES(24,12,1418373540000,NULL,'31915939-48d4-4cac-a2f2-2002cc4feee6',NULL);
+INSERT INTO "tblbodyfeeling" (`feelingtypeid`, `bodyregionid`, `dt` , `userid`, `RowId`, `ServerId`) VALUES(24,12,1418578800000,NULL,'e5e32eba-fa6e-47ce-8431-d03f7e191650',NULL);
+INSERT INTO "tblbodyfeeling" (`feelingtypeid`, `bodyregionid`, `dt` , `userid`, `RowId`, `ServerId`) VALUES(24,12,1418715600000,NULL,'bf3df41e-6760-4765-a21e-747ca0a76a78',NULL);

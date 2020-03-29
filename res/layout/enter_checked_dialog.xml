@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:background="@drawable/border_light" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:minHeight="40dp"
+        android:text="Title"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <ListView
+        android:id="@+id/lvValue"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+    </ListView>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_margin="2dp" >
+
+        <Button
+            android:id="@+id/btnSave"
+            style="@style/button_small_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Сохранить"
+            android:layout_marginRight="2dp" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/button_small_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Отменить"
+            android:layout_marginLeft="2dp" />
+        
+        <Button
+            android:id="@+id/btnNewCustom"
+            style="@style/button_small_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Новый фактор"
+            android:layout_margin="2dp" />
+        
+    </LinearLayout>
+
+</LinearLayout>

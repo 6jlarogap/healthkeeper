@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">5dp</dimen>
+    <dimen name="activity_vertical_margin">5dp</dimen>
+    <dimen name="layout_top">5dp</dimen>
+    <dimen name="layout_bottom">5dp</dimen>
+    <dimen name="layout_left">5dp</dimen>
+    <dimen name="layout_right">5dp</dimen>    
+    <dimen name="axisX">30dp</dimen>
+    
+    <dimen name="et_value_width">200dp</dimen>
+    <dimen name="default_width">100dp</dimen>
+
+    <dimen name="btn_text_size">14sp</dimen>
+    <dimen name="tv_title_size">14sp</dimen>
+    <dimen name="tv_title_width">110dp</dimen>
+    <dimen name="et_text_size">16sp</dimen>
+
+</resources>

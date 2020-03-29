@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Отображение графиков" android:key="category_graph" >
+        <!-- <MultiSelectListPreference
+            android:defaultValue="@array/registration_marital_status_array"
+            android:dialogTitle="Отображать графики на экране"
+            android:entries="@array/registration_pressure_array"
+            android:entryValues="@array/registration_pressure_array"
+            android:key="list_graph"
+            android:summary=""
+            android:title="Отображать графики на экране" /> -->
+    </PreferenceCategory>    
+
+</PreferenceScreen>

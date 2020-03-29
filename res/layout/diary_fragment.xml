@@ -1,0 +1,252 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#82B1FF"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/llPersonInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/layout_bottom"
+        android:paddingLeft="@dimen/layout_left"
+        android:paddingRight="@dimen/layout_right"
+        android:paddingTop="@dimen/layout_top" >
+        
+        <LinearLayout
+            android:id="@+id/llTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+	        <TextView
+	            android:id="@+id/tvHeadDiary"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:background="#FFFFFF"
+	            android:text="@string/tvHeadDiary"
+	            android:textAppearance="?android:attr/textAppearanceLarge"
+	            android:textColor="@color/head1" />
+	
+	        <ImageButton
+	            android:id="@+id/ibTitleShow1"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:layout_marginLeft="10dp"
+	            android:visibility="gone"
+	            android:scaleType="fitCenter"
+	            android:src="@android:drawable/arrow_down_float"
+	            android:padding="4dp" >
+	        </ImageButton>
+	        
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPeriod1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvPatient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvPatient" />
+
+            <TextView
+                android:id="@+id/tvPatientFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPeriod2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvPeriod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvPeriod" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvPeriod"
+                android:layout_marginLeft="20dp"
+                android:text="с" />
+
+            <TextView
+                android:id="@+id/tvPeriodFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvPeriodFrom"
+                android:layout_marginLeft="10dp"
+                android:text="по" />
+
+            <TextView
+                android:id="@+id/tvPeriodTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvLocation" />
+
+            <TextView
+                android:id="@+id/tvLocationValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" />
+
+            <ImageButton
+                android:id="@+id/ibTitleShow2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:visibility="gone"
+                android:scaleType="fitCenter"
+                android:src="@android:drawable/arrow_up_float"
+                android:padding="4dp" >
+            </ImageButton>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlChartTimeColletion"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_alignLeft="@+id/llPersonInfo"
+        android:layout_below="@+id/llPersonInfo"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shadow"
+        android:paddingBottom="@dimen/layout_bottom"
+        android:paddingLeft="@dimen/layout_left"
+        android:paddingRight="@dimen/layout_right"
+        android:paddingTop="@dimen/layout_top" >
+
+        <LinearLayout
+            android:id="@+id/llBtnChartPeriod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvHeadJournal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="@string/tvHeadJournal"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/head2" />
+
+            <Button
+                android:id="@+id/btnChartPeriod"
+                style="@style/button_period"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginLeft="34dp"
+                android:text="Период с _ по _" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llNotFoundBofyFeelingTimeChart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/llBtnChartPeriod"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvNotFoundBodyFeelingTimeChart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/not_found"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/ltgray" />
+        </LinearLayout>
+            
+        <com.health.view.BodyFeelingPlotView
+            android:id="@+id/bodyFeelingPlotView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           	android:layout_below="@+id/llBtnChartPeriod"
+            android:orientation="vertical"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rlChartTimeColletion"
+        android:layout_below="@+id/rlChartTimeColletion"
+        android:layout_marginTop="0dp" />
+        
+    
+    <LinearLayout
+        android:id="@+id/llMeteo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvLog"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/shadow"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/layout_bottom"
+        android:paddingLeft="@dimen/layout_left"
+        android:paddingRight="@dimen/layout_right"
+        android:paddingTop="@dimen/layout_top" >
+
+		<com.health.view.FactorPlotView
+		    android:id="@+id/factorPlotView"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    tabWidgetLocation="top"
+		    userFactor="true"
+		    android:orientation="vertical" />
+    	
+    </LinearLayout>
+    
+    <View
+        android:id="@+id/splitterView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/rlChartTimeColletion"
+        android:layout_alignBaseline="@id/rlChartTimeColletion"                
+        android:layout_marginTop="-10dp"
+        android:visibility="visible"        
+        android:background="@drawable/splitter_light" />
+
+</RelativeLayout>

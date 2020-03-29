@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llHistMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popup_border">
+
+    <FrameLayout
+		android:id="@+id/llHeader"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"  
+		android:layout_alignParentTop="true" >
+	    <ImageButton
+            android:id="@+id/btnMove"
+            style="@style/button_hide_plot"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top|center"
+        	android:gravity="center"
+			android:src="@drawable/ic_move" />
+	    <Button
+            android:id="@+id/btnClose"
+            style="@style/button_hide_plot"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top|right"
+            android:textSize="20sp"
+        	android:gravity="center"
+            android:text="Х" />
+    </FrameLayout>
+    
+    <FrameLayout
+		android:id="@+id/llFooter"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"  
+		android:layout_alignParentBottom="true"
+       	android:orientation="horizontal">
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+            android:layout_gravity="top|center" >
+		    <Button
+				android:id="@+id/btnChartPeriod"
+				style="@style/button_period"
+				android:layout_width="wrap_content"
+				android:layout_height="38dp"
+				android:text="Период с _ по _" />
+		    <Button
+				android:id="@+id/btnStep"
+				style="@style/button_period"
+				android:layout_width="wrap_content"
+				android:layout_height="38dp"
+				android:layout_marginLeft="5dp"
+				android:text="Настройки" />
+	    </LinearLayout>
+	    <ImageButton
+            android:id="@+id/btnResize"
+            style="@style/button_hide_plot"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom|right"
+        	android:gravity="center"
+			android:src="@drawable/ic_resize" />
+	</FrameLayout>
+	    
+    <LinearLayout
+        android:id="@+id/llPlot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@id/llHeader"
+        android:layout_above="@id/llFooter"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+</RelativeLayout>

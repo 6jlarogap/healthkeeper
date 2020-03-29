@@ -1,0 +1,119 @@
+http://health.sesystem.org/getdata.php?cityid=625144&lat=53.9&lng=27.5667&datefrom=1422651600&dateto=1423515600
+
+http://health.sesystem.org/getdata_rar.php?cityid=625144&lat=53.9&lng=27.5667&datefrom=1422651600&dateto=1423515600
+-----------
+weather w
+cityid cid
+temp t
+humidity h
+pressure p
+windspeed ws
+winddeg wd
+clouds c
+rain r
+snow sn
+temp_min tmin
+temp_max  tmax
+---------------
+geophysicsdaily gd
+---------
+geophysicshourly gh
+----------------
+heliophysicsdaily hd
+sunspot_number sn
+sunspot_area sa
+new_regions nr
+xbkgd x
+flares_c fc
+flares_m fm
+flares_x fx
+flares_s fs
+flares_1 f1
+flares_2 f2
+flares_3 f3
+
+------------------
+particledaily pd
+proton1mev p1
+proton10mev p2
+proton100mev p3
+electron08mev e8
+electron2mev e2 
+----------
+sun s
+sun_rise r
+sun_set s
+day_length l
+------------
+moon m
+moon_visibility v
+moon_old o
+moon_rise r
+moon_set s
+moon_phaseid pid
+moon_phase - убрать
+--------------------
+planet p
+mercury_rise me1
+mercury_set me2
+venus_rise v1
+venus_set v2
+mars_rise m1
+mars_set m2
+jupiter_rise j1
+jupiter_set j2
+saturn_rise s1
+saturn_set s2
+uranus_rise u1
+uranus_set u2
+neptune_rise n1
+neptune_set n2
+pluto_rise p1
+pluto_set p2
+--------------
+moonphase mp
+moon_phase p
+moon_phase_id pid
+---------------
+solareclipse se
+phase p
+magnitude m
+maximum max
+contact1 c1
+contact2 c2
+contact3 c3
+contact4 c4
+cityid cid
+
+
+unixsyncdate udate
+operation op
+custombodyfeelingtype bodytype
+customcommonfeelingtype commontype
+customfactortype factortype
+bodyfeeling bf
+userbodyfeelingtype ubft
+commonfeeling c
+factor f
+complaint complaint
+userid uid
+rowid rid
+
+feelinggroupid fgid
+ordinalnumber num
+factorgroupid fgid
+feelingtypeid ftid
+bodyregionid reg
+customfeelingtypeid cftid
+value1 v1
+value2 v2
+value3 v3
+
+factortypeid ftid
+customfactortypeid cfid
+
+
+startdate dt
+complainttypeid cid
+commonfeelingtypeid fid
+count cnt

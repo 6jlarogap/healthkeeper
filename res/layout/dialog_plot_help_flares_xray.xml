@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/tvHelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="График &quot;Солнечные вспышки (X-Ray)&quot; отображает количество солнечных вспышек, классифицированных по интенсивности. Красная линия - вспышки класса C (интенсивность в пике от 1,0*10^6 до 10^5 Вт/м2). Зеленая линия - вспышки класса M (интенсивность в пике от 1,0*10^5 до 10^4 Вт/м2). Синяя линия - вспышки класса X (интенсивность в пике больше 10^4 Вт/м2)."
+        android:gravity="center_horizontal"/>
+    
+	<Button
+        android:id="@+id/btnOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:padding="5dp" 
+        android:layout_gravity="center"
+        style="@style/button"/>
+</LinearLayout>

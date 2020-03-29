@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:text="@string/fragment_text1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/head1" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:text="@string/fragment_text2"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/head2" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical|center_horizontal" >
+
+            <Button
+                android:id="@+id/btnChartPeriod"
+                style="@style/button_period"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="Период с _ по _" />
+
+            <TextView
+                android:id="@+id/tvGPS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="" />
+        </LinearLayout>
+
+        <com.health.view.FactorPlotView
+            android:id="@+id/factorPlotView"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            tabWidgetLocation="right"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/tvStatisticsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:text="@string/statistics_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/head1" >
+        </TextView>
+
+        <com.health.view.FeelingPlotView
+            android:id="@+id/feelingStatPlotView"
+            android:layout_width="fill_parent"
+            android:layout_height="400dp"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/splitterView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/splitter_light"
+        android:visibility="gone" />
+
+</RelativeLayout>
